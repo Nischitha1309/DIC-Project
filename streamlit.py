@@ -50,7 +50,6 @@ elif options == "Explore Data":
     st.write("Summary statistics:")
     st.write(data.describe())
     
-
     # Column-wise statistics
     column = st.selectbox("Select a column to view details", data.columns)
     st.write(f"Unique values in {column}: {data[column].nunique()}")
@@ -75,4 +74,4 @@ elif options == "Visualize Data":
     elif chart_type == "Scatter Plot":
         fig, ax = plt.subplots(figsize=(10, 6))
         sns.scatterplot(data=data, x=x_axis, y=y_axis, ax=ax)
-        st.pyplot(fig)
+        st.pyplot(fig)
