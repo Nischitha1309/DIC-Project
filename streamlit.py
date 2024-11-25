@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Title of the app
+# Title of the app 
 st.title("E-commerce and Retail Sales Data Analysis")
 st.sidebar.title("Navigation")
 
